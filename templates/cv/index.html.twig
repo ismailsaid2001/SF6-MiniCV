@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap/dist/css/bootstrap.css')}}">
+    <title>CV|{{Name}}|{{LastName}}</title>
+</head>
+<body>
+<ol class="list-group">
+    <li class="list-group-item"> Bonjour !!  </li>
+{#  afficher le name et le lastname en majuscule   #}
+    <li class="list-group-item"> je m'appelle {{Name|upper}} {{LastName|upper}} </li>
+    {#  afficher l'age en entier positif #}
+    <li class="list-group-item"> j'ai {{age|abs}} ans  </li>
+    {#  afficher la section #}
+    <li class="list-group-item"> Et je suis de la section {{Section}} </li>
+</ol>
+</body>
+</html>
